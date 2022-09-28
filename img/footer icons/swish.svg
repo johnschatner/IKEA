@@ -1,0 +1,31 @@
+<svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill="#fff" d="M0 0h34v24H0z"/>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M13.115 20.107a8.997 8.997 0 0010.763-2.337 8.989 8.989 0 00-1.107-12.665l-2.529 3.013a7.022 7.022 0 01.865 9.895c-1.988 2.37-5.262 3.16-7.992 2.094z" fill="url(#Swish__paint0_linear)"/>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M13.114 20.107a8.997 8.997 0 0011.636-3.57 7.86 7.86 0 00-2.71-7.283 7.874 7.874 0 00-1.798-1.136 7.022 7.022 0 01.865 9.895c-1.989 2.37-5.263 3.16-7.993 2.094z" fill="url(#Swish__paint1_linear)"/>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M20.868 3.876a8.997 8.997 0 00-10.764 2.336 8.989 8.989 0 001.108 12.665l2.529-3.013a7.022 7.022 0 01-.866-9.895c1.989-2.369 5.263-3.16 7.993-2.093z" fill="url(#Swish__paint2_linear)"/>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M20.868 3.876a8.997 8.997 0 00-11.635 3.57 7.86 7.86 0 002.71 7.283 7.872 7.872 0 001.797 1.135 7.022 7.022 0 01-.865-9.895c1.989-2.369 5.263-3.16 7.993-2.093z" fill="url(#Swish__paint3_linear)"/>
+  <defs>
+    <linearGradient id="Swish__paint0_linear" x1="23.514" y1="14.574" x2="19.694" y2="6.964" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EF2131"/>
+      <stop offset="1" stop-color="#FECF2C"/>
+    </linearGradient>
+    <linearGradient id="Swish__paint1_linear" x1="20.017" y1="8.118" x2="13.32" y2="19.712" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FBC52C"/>
+      <stop offset=".264" stop-color="#F87130"/>
+      <stop offset=".561" stop-color="#EF52E2"/>
+      <stop offset="1" stop-color="#661EEC"/>
+    </linearGradient>
+    <linearGradient id="Swish__paint2_linear" x1="10.647" y1="9.513" x2="14.308" y2="16.959" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#78F6D8"/>
+      <stop offset=".266" stop-color="#77D1F6"/>
+      <stop offset=".554" stop-color="#70A4F3"/>
+      <stop offset="1" stop-color="#661EEC"/>
+    </linearGradient>
+    <linearGradient id="Swish__paint3_linear" x1="14.113" y1="15.864" x2="20.758" y2="4.31" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#536EED"/>
+      <stop offset=".247" stop-color="#54C3EC"/>
+      <stop offset=".564" stop-color="#64D769"/>
+      <stop offset="1" stop-color="#FECF2C"/>
+    </linearGradient>
+  </defs>
+</svg>
