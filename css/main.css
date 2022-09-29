@@ -501,6 +501,174 @@ body {
   min-height: 200vh;
 }
 
+/*Hot spots*/
+.product-hot-spot {
+  position: absolute;
+}
+.hot-spot--active .hot-spot__dot {
+  opacity: 1;
+  visibility: visible;
+}
+.hot-spot__dot {
+  opacity: 0;
+  visibility: hidden;
+}
+.jk-grid__item:hover:not(.hot-spot--active) .hot-spot__dot {
+  opacity: 1;
+  visibility: visible;
+}
+.hot-spot__dot {
+  transition: border-color 250ms var(--animation-cubic),
+    opacity 250ms var(--animation-cubic),
+    visibility 250ms var(--animation-cubic);
+  transform: translateX(-1rem) translateY(-1rem);
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid transparent;
+  position: absolute;
+  background-color: rgb(0, 0, 0, 0.2);
+  border-radius: 99px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hot-spot__dot:focus,
+.hot-spot__dot:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+  background: rgba(0, 0, 0, 0.4);
+}
+.hot-spot__dot::after {
+  content: "";
+  display: block;
+  position: relative;
+  transition: transform 250ms var(--animation-cubic);
+  background: #fff;
+  box-shadow: 0 1px 4px rgb(0, 0, 0 / 55%);
+  border-radius: 99px;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+.hot-spot__dot:hover::after {
+  transform: scale(0.667);
+}
+/*Positions*/
+/*
+    Girl with coloring book
+*/
+.jk-banner__grid .jk-grid__item:first-child .product-hot-spot:first-child {
+  top: 42%;
+  left: 85%;
+}
+.jk-banner__grid .jk-grid__item:first-child .product-hot-spot:nth-child(2) {
+  top: 18%;
+  left: 17%;
+}
+.jk-banner__grid .jk-grid__item:first-child .product-hot-spot:nth-child(3) {
+  top: 40%;
+  left: 14%;
+}
+.jk-banner__grid .jk-grid__item:first-child .product-hot-spot:nth-child(4) {
+  top: 60%;
+  left: 12%;
+}
+.jk-banner__grid .jk-grid__item:first-child .product-hot-spot:nth-child(5) {
+  top: 74%;
+  left: 38%;
+}
+/*  
+    Tärnaby desk lamp
+*/
+.jk-banner__grid .jk-grid__item:nth-child(3) .product-hot-spot:first-child {
+  top: 62%;
+  left: 58%;
+}
+.jk-banner__grid .jk-grid__item:nth-child(3) .product-hot-spot:nth-child(2) {
+  top: 48%;
+  left: 75%;
+}
+/*  
+    Nordli chest drawer
+*/
+.jk-banner__grid .jk-grid__item:nth-child(4) .product-hot-spot:first-child {
+  top: 48%;
+  left: 55%;
+}
+/*  
+    Shoes and bedsheet
+*/
+.jk-banner__grid .jk-grid__item:nth-child(5) .product-hot-spot:first-child {
+  top: 60%;
+  left: 60%;
+}
+.jk-banner__grid .jk-grid__item:nth-child(5) .product-hot-spot:nth-child(2) {
+  top: 16%;
+  left: 85%;
+}
+/*Product info*/
+.hot-spot__card {
+  position: absolute;
+}
+.hot-spot__product-info {
+  display: flex;
+  flex-direction: column;
+  padding: 6px 2px 10px 10px;
+  background: #fff;
+}
+.hot-spot__product-info:hover,
+.hot-spot__product-info:focus {
+  text-decoration: none;
+}
+.hot-spot__product-info > *:nth-child(1n + 3) {
+  margin-bottom: calc(var(--gap) * 0.2);
+}
+.hot-spot--active .hot-spot__card {
+  opacity: 1;
+  visibility: visible;
+}
+.hot-spot__product-info .jk-h3 {
+  color: var(--color-neutral-black-100);
+  font-size: var(--fs-normal-500);
+}
+.hot-spot__product-info:hover h3.jk-h3 {
+  text-decoration: underline;
+}
+.hot-spot__title {
+  width: 100%;
+  display: flex;
+  gap: calc(var(--gap) * 0.4);
+  align-items: center;
+}
+.--accent-title {
+  color: var(--color-accent-blue-100);
+  font-size: var(--fs-normal-500);
+}
+.hot-spot__title svg {
+  color: var(--color-neutral-black-100);
+  width: 34px;
+  height: 34px;
+}
+.product-info__description {
+  color: var(--color-neutral-grey-400);
+}
+.product-info__orig-price {
+  font-size: var(--fs-normal-400);
+  color: var(--color-neutral-grey-400);
+}
+.product-info__price {
+  color: var(--color-neutral-black-100);
+  font-size: var(--fs-heading-700);
+  font-weight: var(--font-weight-bold);
+}
+/*Positions*/
+/*
+    MÅLA, Portabel ritväska
+*/
+.jk-banner__grid .jk-grid__item:first-child .hot-spot__card:nth-child(6) {
+  top: 50%;
+  left: 50%;
+  transform: translateY(-30%) translateX(-50%);
+}
+
 /*Banner*/
 .jk-banner__container {
   display: flex;
@@ -522,6 +690,13 @@ body {
   gap: 20px;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-template-rows: auto repeat(7, 1fr);
+}
+.jk-grid__item {
+  position: relative;
+}
+.jk-grid__item > a {
+  display: block;
+  height: 100%;
 }
 .jk-grid__item img {
   height: 100%;
@@ -1297,7 +1472,7 @@ a:active.jk-btn-white {
 }
 @media (min-width: 900px) {
   .footer-legal__policies {
-    margin: auto;
+    margin-left: auto;
   }
   .footer-legal__policies ul {
     justify-content: flex-end;
@@ -1390,7 +1565,7 @@ ul {
   */
 html,
 body {
-  height: 100%;
+  min-height: 100%;
 }
 /*
     Typographic tweaks!
