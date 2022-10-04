@@ -496,6 +496,7 @@ body.down header.clone {
 .jk-hamburger__container {
   position: fixed;
   z-index: 2;
+  top: 44px;
 }
 body {
   min-height: 200vh;
@@ -1479,6 +1480,60 @@ a:active.jk-btn-white {
   }
 }
 
+/*
+    Back to top button
+*/
+.jk-back-to-top {
+  display: flex;
+  min-height: 75px;
+  justify-content: center;
+  align-items: center;
+
+  border-top: 1px solid var(--colour-neutral-grey-100);
+}
+.jk-svg-btn.jk-btt__btn {
+  padding: 8px;
+  border-radius: 99px;
+  transition: 200ms ease-in-out;
+  background-color: var(--colour-neutral-grey-100);
+}
+.jk-svg-lg-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.back-to-top__label {
+  max-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  transform-origin: left;
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  clip: initial;
+  transition: 200ms ease-in-out;
+}
+.jk-back-to-top:hover .back-to-top__label {
+  max-width: 12.5rem;
+  margin-inline-start: 0.5rem;
+}
+.jk-back-to-top:hover .jk-btt__btn {
+  padding-inline-start: 1rem;
+  padding-inline-end: 1.5rem;
+}
+/* Smooth scrolling IF user doesn't have a preference due to motion sensitivities */
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+/*Only display on devices with 1200px or less screen*/
+@media (min-width: 1200px) {
+  .jk-back-to-top {
+    display: none;
+  }
+}
+
 /*Layout*/
 .jk-page-container {
   padding: 0 1.25rem;
@@ -1500,6 +1555,9 @@ a:active.jk-btn-white {
   }
 }
 /*Index.html main sections*/
+.jk-section {
+  margin: calc(var(--gap) * 1) 0;
+}
 .jk-main-section {
   margin: calc(var(--gap) + 10px) 0;
 }
@@ -1517,8 +1575,8 @@ a:active.jk-btn-white {
     position: absolute;
     max-width: 107rem;
     margin: 0 auto;
-    right: 3rem;
-    left: 2.25rem;
+    right: 1.5rem;
+    left: 3rem;
   }
 }
 @media (min-width: 37.5em) {
@@ -1618,4 +1676,36 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+/*
+    Utility classes
+*/
+.jk-svg-btn {
+  display: block;
+  background: none;
+  border: none;
+  padding: 0;
+}
+.jk-svg-btn__inner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  height: inherit;
+}
+.jk-svg-icon-sm {
+  display: inline-block;
+  height: 1.5rem;
+  width: 1.5rem;
+  vertical-align: middle;
+  fill: currentColor;
+}
+a.jk-link {
+  color: currentColor;
+  text-decoration: initial;
+}
+button {
+  cursor: pointer;
 }
