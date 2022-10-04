@@ -147,11 +147,13 @@
   position: absolute;
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 .product-video video {
   max-width: 100%;
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 @media (min-width: 900px) {
@@ -190,6 +192,7 @@
   .product-gallery {
     overflow-x: scroll;
     padding-bottom: var(--gap);
+    -ms-scroll-snap-type: x mandatory;
     scroll-snap-type: x mandatory;
     min-width: 100%; /*Responsive*/
   }
