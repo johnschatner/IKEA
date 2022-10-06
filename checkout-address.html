@@ -9,6 +9,7 @@
     <title>Checkout - IKEA</title>
     <link rel="shortcut icon" href="img/ikea-logo.svg" type="image/x-icon" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/checkout.css" />
 
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,97 +25,6 @@
     <script src="js/accordion.js" defer></script>
   </head>
   <body>
-    <div class="jk-messages">
-      <a href="/product-details.html" class="jk-messages-link">
-        <svg
-          focusable="false"
-          class="hnf-svg-icon"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M19.205 5.599c.9541.954 1.4145 2.2788 1.4191 3.6137 0 3.0657-2.2028 5.7259-4.1367 7.5015-1.2156 1.1161-2.5544 2.1393-3.9813 2.9729L12 20.001v-2.3516c.6699-.4304 1.9095-1.2834 3.1347-2.4084 1.8786-1.7247 3.4884-3.8702 3.4894-6.0264-.0037-.849-.2644-1.6326-.8333-2.2015-1.1036-1.1035-2.9413-1.0999-4.0445.0014l-1.7517 1.7448-1.7461-1.7462c-1.1165-1.1164-2.9267-1.1164-4.0431 0-1.6837 1.6837-.5313 4.4136.6406 6.0155.3487.4768.7386.9326 1.1472 1.3617L8 11.9982l2 .0057-.017 6-6-.0171.0056-2 2.7743.0079c-.5387-.5472-1.0629-1.1451-1.5311-1.7852-1.0375-1.4183-1.8594-3.1249-1.8597-4.9957-.0025-1.2512.3936-2.5894 1.419-3.6149 1.8976-1.8975 4.974-1.8975 6.8716 0l.3347.3347.336-.3347c1.8728-1.8722 4.9989-1.8727 6.8716 0z"
-          ></path>
-        </svg>
-        <span class="jk-message-label">Öppet köp i 365 dagar</span>
-      </a>
-      <a href="/product-details.html" class="jk-messages-link">
-        <svg
-          focusable="false"
-          class="hnf-svg-icon"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M11 16h2V8h-2v8zm4.25-2.75c.6904 0 1.25-.5596 1.25-1.25s-.5596-1.25-1.25-1.25S14 11.3096 14 12s.5596 1.25 1.25 1.25zM10 12c0 .6904-.5596 1.25-1.25 1.25S7.5 12.6904 7.5 12s.5596-1.25 1.25-1.25S10 11.3096 10 12z"
-          ></path>
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M23 13.0533 11.9467 2l-8.289 1.6578L2 11.9467 13.0533 23 23 13.0533zM4.1206 11.3047 5.318 5.3179l5.9867-1.1973 8.9326 8.9327-7.184 7.184-8.9327-8.9326z"
-          ></path>
-        </svg>
-        <span class="jk-message-label">Månadens IKEA Family erbjudanden</span>
-      </a>
-      <a href="/product-details.html" class="jk-messages-link">
-        <svg
-          focusable="false"
-          class="hnf-svg-icon"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M13.0009 2.586 4 11.5868v5.4144h5.4142l8.9944-8.9944-5.4077-5.421zM6 15.0012v-2.5859l6.9991-6.9993 2.5828 2.589-6.9961 6.9962H6z"
-          ></path>
-          <path d="M4 21.0009h16v-2H4v2z"></path>
-        </svg>
-        <span class="jk-message-label"
-          >Kostnadsfri köksplanering — där det passar dig</span
-        >
-      </a>
-    </div>
-    <div class="jk-hamburger jk-page-container">
-      <div class="jk-page-container__inner">
-        <div class="jk-hamburger__container jk-page-container__secondary">
-          <div class="jk-hamburger__icon">
-            <button
-              class="jk-hamburger__button jk-hamburger__svg"
-              aria-label="Öppna menyn"
-            >
-              <svg
-                focusable="false"
-                class="svg-icon hnf-svg-icon"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M20 8H4V6h16v2zm0 5H4v-2h16v2zm0 5H4v-2h16v2z"
-                ></path>
-              </svg>
-            </button>
-            <button class="jk-hamburger__button" aria-label="Öppna menyn">
-              <span class="jk-hamburger__label">Meny</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
     <header class="jk-header">
       <div class="jk-page-container">
         <div class="jk-page-container__inner">
@@ -144,765 +54,279 @@
                 </svg>
               </a>
             </div>
-            <div class="jk-header__search">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-                class="svg-icon search-field__search-icon search-field__search-icon--show"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M13.98 15.395a6.294 6.294 0 111.414-1.414l4.602 4.601-1.414 1.414-4.602-4.601zm.607-5.101a4.294 4.294 0 11-8.587 0 4.294 4.294 0 018.587 0z"
-                  fill="currentColor"
-                ></path>
-              </svg>
-              <input
-                class="jk-header-search__input"
-                type="text"
-                name="search"
-                id="search"
-                placeholder="Vad letar du efter?"
-              />
-              <div class="button-and-tooltip">
-                <div class="button-items__wrapper">
-                  <button class="search-field__camera-button">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                      class="svg-icon search-field__camera-icon"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M16.002 13a4 4 0 11-8 0 4 4 0 018 0zm-2 0a2 2 0 11-4 0 2 2 0 014 0z"
-                        fill="currentColor"
-                      ></path>
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M9.443 4L7.586 7H3v13h18V7h-4.586l-1.857-3H9.443zm1.114 2h2.886L15.3 9H19v9H5V9h3.7l1.857-3z"
-                        fill="currentColor"
-                      ></path>
-                    </svg>
-                  </button>
-                  <span class="camera-tooltip"
-                    >Sök på IKEA produkter med hjälp av ett foto</span
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="jk-header__icons">
-              <ul>
-                <li class="jk-header-icon__user-account">
-                  <a href="#/">
-                    <svg
-                      focusable="false"
-                      class="svg-icon jk-person__icon"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M10.6724 6.4678c.2734-.2812.6804-.4707 1.3493-.4707.3971 0 .705.0838.9529.2225.241.1348.4379.3311.5934.6193l.0033.006c.1394.2541.237.6185.237 1.1403 0 .7856-.2046 1.2451-.4796 1.5278l-.0048.005c-.2759.2876-.679.4764-1.334.4764-.3857 0-.6962-.082-.956-.2241-.2388-.1344-.4342-.3293-.5888-.6147-.1454-.275-.2419-.652-.2419-1.1704 0-.7902.2035-1.2442.4692-1.5174zm1.3493-2.4717c-1.0834 0-2.054.3262-2.7838 1.0766-.7376.7583-1.0358 1.781-1.0358 2.9125 0 .7656.1431 1.483.4773 2.112l.0031.0058c.3249.602.785 1.084 1.3777 1.4154l.0062.0035c.5874.323 1.2368.4736 1.9235.4736 1.0818 0 2.0484-.3333 2.7755-1.0896.7406-.7627 1.044-1.786 1.044-2.9207 0-.7629-.1421-1.4784-.482-2.0996-.3247-.6006-.7844-1.0815-1.376-1.4125-.5858-.3276-1.2388-.477-1.9297-.477zM6.4691 16.8582c.2983-.5803.7228-1.0273 1.29-1.3572.5582-.3191 1.2834-.5049 2.2209-.5049h4.04c.9375 0 1.6626.1858 2.2209.5049.5672.3299.9917.7769 1.29 1.3572.3031.5896.4691 1.2936.4691 2.1379v1h2v-1c0-1.1122-.2205-2.1384-.6904-3.0523a5.3218 5.3218 0 0 0-2.0722-2.1769c-.9279-.5315-2.0157-.7708-3.2174-.7708H9.98c-1.1145 0-2.2483.212-3.2225.7737-.8982.5215-1.5928 1.2515-2.0671 2.174C4.2205 16.8577 4 17.8839 4 18.9961v1h2v-1c0-.8443.166-1.5483.4691-2.1379z"
-                      ></path>
-                    </svg>
-                    <span class="jk-user-account__label"
-                      >Logga in/Registrera dig</span
-                    >
-                  </a>
-                </li>
-                <li class="jk-header-icon__wishlist">
-                  <a href="#/">
-                    <svg
-                      focusable="false"
-                      class="svg-icon"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M19.205 5.599c.9541.954 1.4145 2.2788 1.4191 3.6137 0 3.0657-2.2028 5.7259-4.1367 7.5015-1.2156 1.1161-2.5544 2.1393-3.9813 2.9729L12 20.001l-.501-.3088c-.9745-.5626-1.8878-1.2273-2.7655-1.9296-1.1393-.9117-2.4592-2.1279-3.5017-3.5531-1.0375-1.4183-1.8594-3.1249-1.8597-4.9957-.0025-1.2512.3936-2.5894 1.419-3.6149 1.8976-1.8975 4.974-1.8975 6.8716 0l.3347.3347.336-.3347c1.8728-1.8722 4.9989-1.8727 6.8716 0zm-7.2069 12.0516c.6695-.43 1.9102-1.2835 3.1366-2.4096 1.8786-1.7247 3.4884-3.8702 3.4894-6.0264-.0037-.849-.2644-1.6326-.8333-2.2015-1.1036-1.1035-2.9413-1.0999-4.0445.0014l-1.7517 1.7448-1.7461-1.7462c-1.1165-1.1164-2.9267-1.1164-4.0431 0-1.6837 1.6837-.5313 4.4136.6406 6.0156.8996 1.2298 2.0728 2.3207 3.137 3.1722a24.3826 24.3826 0 0 0 2.0151 1.4497z"
-                      ></path>
-                    </svg>
-                  </a>
-                </li>
-                <li class="jk-header-icon__cart">
-                  <a href="/checkout-address.html">
-                    <svg
-                      focusable="false"
-                      class="svg-icon"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M10.9994 4h-.5621l-.2922.4802-3.357 5.517h-5.069l.3107 1.2425 1.6212 6.4851c.334 1.3355 1.5339 2.2724 2.9105 2.2724h10.8769c1.3766 0 2.5765-.9369 2.9104-2.2724l1.6213-6.4851.3106-1.2425h-5.0695l-3.3574-5.517L13.5618 4h-2.5624zm3.8707 5.9972L12.4376 6h-.8761L9.1292 9.9972h5.7409zm-9.2787 7.2425-1.3106-5.2425h15.4384l-1.3106 5.2425a1 1 0 0 1-.9701.7575H6.5615a1 1 0 0 1-.97-.7575z"
-                      ></path>
-                    </svg>
-                  </a>
-                </li>
-                <li class="jk-header-icon__menu">
-                  <a href="#/">
-                    <svg
-                      focusable="false"
-                      class="svg-icon hnf-svg-icon"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M20 8H4V6h16v2zm0 5H4v-2h16v2zm0 5H4v-2h16v2z"
-                      ></path>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
     </header>
-    <div class="jk-header__bottom-bar">
-      <div class="jk-page-container">
-        <div class="jk-page-container__inner">
-          <div class="jk-bottom-bar__container jk-page-container__main">
-            <div class="jk-bottom-bar__navbar">
-              <ul>
-                <li><a href="/product-details.html">Just nu</a></li>
-                <li><a href="/product-details.html">Produkter</a></li>
-                <li><a href="/product-details.html">Rum</a></li>
-              </ul>
-            </div>
-            <div class="jk-bottom-bar__shipping-and-store">
-              <ul>
-                <li>
-                  <a href="/product-details.html">
-                    <svg
-                      focusable="false"
-                      class="svg-icon hnf-svg-icon"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M1 4h15v3h3.0246l3.9793 5.6848V18h-2.6567c-.4218 1.3056-1.6473 2.25-3.0933 2.25-1.446 0-2.6715-.9444-3.0932-2.25h-3.9044c-.4217 1.3056-1.6472 2.25-3.0932 2.25S4.4916 19.3056 4.0698 18H1V4zm3.0698 12c.4218-1.3056 1.6473-2.25 3.0933-2.25 1.446 0 2.6715.9444 3.0932 2.25H14V6H3v10h1.0698zM16 14.0007a3.24 3.24 0 0 1 1.2539-.2507c1.446 0 2.6715.9444 3.0933 2.25h.6567v-2.6848L17.9833 9H16v5.0007zM7.163 15.75c-.6903 0-1.25.5596-1.25 1.25s.5597 1.25 1.25 1.25c.6904 0 1.25-.5596 1.25-1.25s-.5596-1.25-1.25-1.25zm10.0909 0c-.6904 0-1.25.5596-1.25 1.25s.5596 1.25 1.25 1.25 1.25-.5596 1.25-1.25-.5596-1.25-1.25-1.25z"
-                      ></path>
-                    </svg>
-                    <span class="jk-shipping-and-store__label">42069</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="/product-details.html">
-                    <svg
-                      focusable="false"
-                      class="svg-icon hnf-svg-icon"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M22 20V4H2v16h20zM20 6H4v12h3v-8h10v8h3V6zm-9 6H9v6h2v-6zm2 6h2v-6h-2v6z"
-                      ></path>
-                    </svg>
-                    <span class="jk-shipping-and-store__label"
-                      >Helsingborg</span
-                    >
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <aside class="jk-menu"></aside>
     <main class="jk-main">
       <div class="jk-page-container">
         <div class="jk-page-container__inner">
           <div class="jk-page-container__main">
-            <section class="jk-banner__container jk-main-section">
-              <div class="jk-banner__title">
-                <h2 class="jk-h2">
-                  Hitta dina favoriter bland våra erbjudanden just nu!
-                </h2>
-                <p>
-                  Se alla våra erbjudanden online eller i ditt närmaste varuhus.
-                  Gäller för dig som är, eller blir, IKEA Family medlem.
-                </p>
+            <section class="jk-checkout jk-main-section">
+              <div class="jk-checkout-steps">
+                <section class="delivery-step">
+                  <div
+                    aria-label="Hämta din beställning här, steg 1"
+                    class="jk-step-indicator"
+                  >
+                    <span class="step-indicator--value">1</span>
+                  </div>
+                  <div class="checkout-step__content">
+                    <nav class="delivery-step__nav">
+                      <h3 class="jk-dark">Hämta din beställning här</h3>
+                      <a class="jk-grey" href="#/">Ändra</a>
+                    </nav>
+                    <div class="delivery-location">
+                      <h4 class="jk-dark">Click & Collect drive-thru</h4>
+                      <span>IKEA Helsingborg</span>
+                      <span>Marknadsvägen 7 26036 Ödåkra</span>
+                    </div>
+                    <div class="delivery-time">
+                      <h4 class="jk-dark">Tid för upphämtning</h4>
+                      <span>2022-10-05 15:00 - 16:00</span>
+                      <p>
+                        Ordern hämtas utanför valt varuhus inom bokat
+                        tidsintervall och senast 24 timmar efter. Vänligen
+                        invänta avisering från IKEA innan du åker till ditt
+                        varuhus.
+                      </p>
+                    </div>
+                  </div>
+                </section>
+                <section class="address-step">
+                  <div
+                    aria-label="Dina uppgifter, steg 2"
+                    class="jk-step-indicator"
+                  >
+                    <span class="step-indicator--value step--active">2</span>
+                  </div>
+                  <div class="checkout-step__content">
+                    <h1 class="jk-dark">Adress</h1>
+                    <form action="#">
+                      <input type="checkbox" name="isCompany" id="isCompany" />
+                      <label for="isCompany">Jag är företagskund</label>
+                      <h3 class="jk-dark">Fakturaadress</h3>
+                      <div class="jk-form-row only-desktop">
+                        <div class="jk-col-6">
+                          <label for="fname">Förnamn</label>
+                          <input id="fname" type="text" />
+                        </div>
+                        <div class="jk-col-6">
+                          <label for="lname">Efternamn</label>
+                          <input id="lname" type="text" />
+                        </div>
+                      </div>
+                      <label for="email">E-postadress</label>
+                      <input type="email" name="email" id="email" />
+                      <div class="jk-form-row">
+                        <label for="phone__number">Mobiltelefonnummer</label>
+                        <div class="jk-col-4">
+                          <select name="country-code" id="country-code">
+                            <option value="SE">SE (+46)</option>
+                            <option value="FI">FI (+358)</option>
+                            <option value="NO">NO (+47)</option>
+                            <option value="DK">DK (+45)</option>
+                            <option value="GB">SE (+44)</option>
+                            <option value="US">US (+1)</option>
+                          </select>
+                        </div>
+                        <div class="jk-col-8">
+                          <input
+                            type="number"
+                            name="phone__number"
+                            id="phone__number"
+                          />
+                        </div>
+                      </div>
+                      <label for="country">Land</label>
+                      <select name="country" id="country">
+                        <option value="Sweden">Sverige</option>
+                        <option value="England">England</option>
+                        <option value="Denmark">Danmark</option>
+                        <option value="United States of America">USA</option>
+                        <option value="Norway">Norge</option>
+                        <option value="Finland">Finland</option>
+                        <option value="Switzerland">Schweiz</option>
+                      </select>
+                      <label for="street">Gatuadress</label>
+                      <input id="street" type="text" />
+                      <label for="co-box">C/O (valfritt)</label>
+                      <input id="co-box" type="text" />
+                      <label for="postal-code">Postnummer</label>
+                      <input id="postal-code" type="number" />
+                      <label for="town">Ort</label>
+                      <input id="town" type="text" />
+                      <div class="ikea-family-card">
+                        <h3 class="jk-dark">IKEA Family</h3>
+                        <a class="jk-dark" href="#/"
+                          >Skriv in ditt IKEA Family kortnummer</a
+                        >
+                      </div>
+                      <div class="legal-notice">
+                        <span
+                          >Genom att klicka på Fortsätt har jag läst och
+                          förstått IKEA
+                          <a class="jk-dark" href="#/"
+                            >Integritetspolicy</a
+                          ></span
+                        >
+                      </div>
+                      <button type="submit">
+                        <span>Fortsätt</span>
+                      </button>
+                    </form>
+                  </div>
+                </section>
+                <section class="payment-step step--disabled">
+                  <div
+                    aria-label="Hämta din beställning här, steg 1"
+                    class="jk-step-indicator"
+                  >
+                    <span class="step-indicator--value">3</span>
+                  </div>
+                  <div class="checkout-step__content">
+                    <h3>Betalning</h3>
+                  </div>
+                </section>
               </div>
-              <div class="jk-banner__button">
-                <a href="/product-details.html" class="jk-btn jk-btn-primary"
-                  >Se alla erbjudanden</a
-                >
-              </div>
-              <div class="jk-banner__grid">
+              <div class="cart-sidebar">
+                <nav class="cart-sidebar__nav">
+                  <h3 class="jk-dark">Din varukorg</h3>
+                  <a class="jk-grey" href="#/">Ändra</a>
+                </nav>
                 <div
-                  class="jk-grid__item hot-spot--active"
-                  aria-label="Girl sitting on bed coloring"
+                  aria-label="TÄRNABY Bordslampa, svart antracit"
+                  class="cart-item"
                 >
-                  <div class="product-hot-spot">
-                    <a href="/product-details.html" class="hot-spot__dot"></a>
+                  <div class="cart-item__img">
+                    <img src="img/tärnaby/taernaby-1.avif" alt="TÄRNABY" />
                   </div>
-                  <div class="product-hot-spot">
-                    <a href="/product-details.html" class="hot-spot__dot"></a>
-                  </div>
-                  <div class="product-hot-spot">
-                    <a href="/product-details.html" class="hot-spot__dot"></a>
-                  </div>
-                  <div class="product-hot-spot">
-                    <a href="/product-details.html" class="hot-spot__dot"></a>
-                  </div>
-                  <div class="product-hot-spot">
-                    <a href="/product-details.html" class="hot-spot__dot"></a>
-                  </div>
-                  <div class="hot-spot__card">
-                    <a
-                      href="/product-details.html"
-                      class="hot-spot__product-info"
+                  <div class="cart-item__content">
+                    <h3 class="jk-black">TÄRNABY</h3>
+                    <span class="cart-item--description"
+                      >bordslampa, antracit</span
                     >
-                      <div class="hot-spot__title">
-                        <h3 class="--accent-title">IKEA Family pris</h3>
+                    <div class="cart-item--quantity">Antal: 1</div>
+                  </div>
+                  <div class="cart-item__price">
+                    <span class="price--value">249</span>
+                    <span class="price--currency">:-</span>
+                  </div>
+                  <div class="cart-item-button">
+                    <button class="cart-item__btn jk-svg-btn">
+                      <span class="jk-svg-btn__inner">
                         <svg
                           focusable="false"
                           viewBox="0 0 24 24"
-                          class="pub__svg-icon pub__chunky-header__icon"
+                          class="jk-svg-icon-sm"
                           aria-hidden="true"
                         >
                           <path
                             fill-rule="evenodd"
                             clip-rule="evenodd"
-                            d="m15.5996 12.0007-5.785 5.7857-1.4143-1.4141 4.3711-4.3716L8.4003 7.629l1.4143-1.4142 5.785 5.7859z"
+                            d="m16.415 12.0011-8.0012 8.0007-1.4141-1.4143 6.587-6.5866-6.586-6.5868L8.415 4l8 8.0011z"
                           ></path>
                         </svg>
-                      </div>
-                      <h3 class="jk-h3">MÅLA</h3>
-                      <span class="product-info__description"
-                        >Portabel ritväska</span
+                      </span>
+                    </button>
+                  </div>
+                </div>
+                <div class="order-summary">
+                  <h3 class="jk-black">Din beställning</h3>
+                  <div class="product-price">
+                    <span class="product-price--label">Produktpris</span>
+                    <div class="jk-price">
+                      <span class="product-price--value">249</span>
+                      <span class="product-price--currency">:-</span>
+                    </div>
+                  </div>
+                  <div class="click-and-collect-price product-price">
+                    <span class="product-price--label"
+                      >Pris för upphämtning</span
+                    >
+                    <div class="jk-price">
+                      <span class="product-price--value">49</span>
+                      <span class="product-price--currency">:-</span>
+                    </div>
+                  </div>
+                  <div class="order-summary--divider"></div>
+                  <div class="total-price product-price">
+                    <span class="product-price--label">Totalpris</span>
+                    <div class="jk-price">
+                      <span class="product-price--value">298</span>
+                      <span class="product-price--currency">:-</span>
+                    </div>
+                  </div>
+                  <div class="excl-tax product-price">
+                    <span class="product-price--label">Exklusive moms</span>
+                    <div class="jk-price">
+                      <span class="product-price--value">238,40</span>
+                      <span class="product-price--currency">:-</span>
+                    </div>
+                  </div>
+                  <div class="tax product-price">
+                    <span class="product-price--label">Moms</span>
+                    <div class="jk-price">
+                      <span class="product-price--value">59,60</span>
+                      <span class="product-price--currency">:-</span>
+                    </div>
+                  </div>
+                  <div class="return-policy guarantee-link">
+                    <a
+                      aria-label="365 dagar att ändra dig"
+                      class="jk-dark"
+                      href="#/"
+                    >
+                      <svg
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        class="jk-svg-icon-sm"
+                        aria-hidden="true"
                       >
-                      <span class="product-info__orig-price"
-                        >Ordinarie pris 129:-</span
-                      >
-                      <span class="product-info__price">79:-</span>
+                        <path
+                          d="M19.205 5.599c.9541.954 1.4145 2.2788 1.4191 3.6137 0 3.0657-2.2028 5.7259-4.1367 7.5015-1.2156 1.1161-2.5544 2.1393-3.9813 2.9729L12 20.001v-2.3516c.6699-.4304 1.9095-1.2834 3.1347-2.4084 1.8786-1.7247 3.4884-3.8702 3.4894-6.0264-.0037-.849-.2644-1.6326-.8333-2.2015-1.1036-1.1035-2.9413-1.0999-4.0445.0014l-1.7517 1.7448-1.7461-1.7462c-1.1165-1.1164-2.9267-1.1164-4.0431 0-1.6837 1.6837-.5313 4.4136.6406 6.0155.3487.4768.7386.9326 1.1472 1.3617L8 11.9982l2 .0057-.017 6-6-.0171.0056-2 2.7743.0079c-.5387-.5472-1.0629-1.1451-1.5311-1.7852-1.0375-1.4183-1.8594-3.1249-1.8597-4.9957-.0025-1.2512.3936-2.5894 1.419-3.6149 1.8976-1.8975 4.974-1.8975 6.8716 0l.3347.3347.336-.3347c1.8728-1.8722 4.9989-1.8727 6.8716 0z"
+                        ></path>
+                      </svg>
+                      <span class="return__label">365 dagar att ändra dig</span>
                     </a>
                   </div>
-                  <a href="/product-details.html">
-                    <img
-                      src="img/girl-coloring.avif"
-                      alt="Girl sitting on bed coloring"
-                    />
-                  </a>
-                </div>
-                <div class="jk-grid__item" aria-label="IKEA Family erbjudanden">
-                  <a href="/product-details.html">
-                    <img
-                      src="img/ikea-family-erbjudanden.avif"
-                      alt="IKEA Family erbjudanden - upp till 25%"
-                    />
-                  </a>
-                </div>
-                <div class="jk-grid__item">
-                  <div class="product-hot-spot">
-                    <a href="/product-details.html" class="hot-spot__dot"></a>
+                  <div class="secure-checkout guarantee-link">
+                    <a
+                      aria-label="365 dagar att ändra dig"
+                      class="jk-dark"
+                      href="#/"
+                    >
+                      <svg
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        class="jk-svg-icon-sm"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M12 3C9.7909 3 8 4.7909 8 7v4H5v11h14V11h-3V7c0-2.2091-1.7909-4-4-4zm2 8V7c0-1.1046-.8954-2-2-2s-2 .8954-2 2v4h4zm-7 9v-7h10v7H7z"
+                        ></path>
+                      </svg>
+                      <span class="return__label"
+                        >Säker shopping med SSL datakryptering</span
+                      >
+                    </a>
                   </div>
-                  <div class="product-hot-spot">
-                    <a href="/product-details.html" class="hot-spot__dot"></a>
-                  </div>
-                  <a href="/product-details.html">
-                    <img
-                      src="img/tarnaby-bedside-lamp.avif"
-                      alt="Picture of Tärnaby lamp"
-                    />
-                  </a>
+                  <div class="order-summary-mb--divider"></div>
                 </div>
-                <div class="jk-grid__item">
-                  <div class="product-hot-spot">
-                    <a href="/product-details.html" class="hot-spot__dot"></a>
-                  </div>
-                  <a href="/product-details.html">
-                    <img
-                      src="img/nordli-drawer.avif"
-                      alt="Picture of Nordli drawer"
-                    />
-                  </a>
-                </div>
-                <div class="jk-grid__item">
-                  <div class="product-hot-spot">
-                    <a href="/product-details.html" class="hot-spot__dot"></a>
-                  </div>
-                  <div class="product-hot-spot">
-                    <a href="/product-details.html" class="hot-spot__dot"></a>
-                  </div>
-                  <a href="/product-details.html">
-                    <img
-                      src="img/skubb-skolåda.webp"
-                      alt="Picture of Skubb skolåda"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="jk-banner__show-more-label">
-                <a
-                  href="/product-details.html"
-                  class="jk-banner__show-more-link"
-                >
-                  <span class="jk-show-more-link__label"
-                    >Se alla erbjudanden</span
-                  >
-                  <svg
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                    class="jk-chevron"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="m15.5996 12.0007-5.785 5.7857-1.4143-1.4141 4.3711-4.3716L8.4003 7.629l1.4143-1.4142 5.785 5.7859z"
-                    ></path>
-                  </svg>
-                </a>
               </div>
             </section>
           </div>
         </div>
       </div>
     </main>
-    <div class="jk-back-to-top">
-      <button
-        class="jk-btn jk-svg-btn jk-btt__btn"
-        onclick="window.location.href='#'"
-      >
-        <span class="jk-svg-btn__inner">
-          <svg
-            focusable="false"
-            class="jk-svg-lg-icon"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="m12.0001 6.9394 8.0007 8.0013-1.4142 1.4141L12 9.7678l-6.5869 6.586-1.414-1.4143 8.001-8z"
-            ></path>
-          </svg>
-          <span class="back-to-top__label">Tillbaka till början</span>
-        </span>
-      </button>
-    </div>
-    <footer class="jk-footer">
+    <footer class="jk-footer jk-footer-sm">
       <div class="jk-page-container">
         <div class="jk-page-container__inner">
           <div class="jk-page-container__main">
-            <section class="jk-main-section">
+            <section>
               <div class="jk-footer__container">
-                <div class="jk-footer-links">
-                  <div class="footer-item footer-banner__container">
-                    <div class="footer-banner">
-                      <h3 class="jk-h3">Gå med i IKEA Family</h3>
-                      <p>
-                        Ge dina idéer nytt liv med erbjudanden, inspiration och
-                        massor av aktiviteter i våra varuhus - helt
-                        kostnadsfritt.
-                      </p>
-                      <a
-                        href="/product-details.html"
-                        class="jk-btn jk-btn-secondary"
-                      >
-                        <span class="btn-label">Bli medlem här</span>
-                      </a>
-                    </div>
-                    <div class="footer-banner">
-                      <h3 class="jk-h3">IKEA för företag</h3>
-                      <p>
-                        Våra företagsexperter hjälper till med flexibla,
-                        prisvärda och mer hållbara lösningar.
-                      </p>
-                      <a
-                        href="/product-details.html"
-                        class="jk-btn jk-btn-secondary"
-                      >
-                        <span class="btn-label">IKEA för företag</span>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="footer-item footer-accordions__container">
-                    <div class="accordion__container">
-                      <button class="accordion">Ditt IKEA Family</button>
-                      <div class="panel">
-                        <ul>
-                          <li><a href="/product-details.html">Logga in</a></li>
-                          <li>
-                            <a href="/product-details.html">Min inköpslista</a>
-                          </li>
-                          <li>
-                            <a href="/product-details.html">Följ min order</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div class="accordion__container">
-                      <button class="accordion">Handla på IKEA</button>
-                      <div class="panel">
-                        <ul>
-                          <li>
-                            <a href="/product-details.html"
-                              >Varuhus & öppettider</a
-                            >
-                          </li>
-                          <li>
-                            <a href="/product-details.html"
-                              >Betalningsalternativ</a
-                            >
-                          </li>
-                          <li>
-                            <a href="/product-details.html"
-                              >Leveransalternativ</a
-                            >
-                          </li>
-                          <li>
-                            <a href="/product-details.html"
-                              >Personlig planering</a
-                            >
-                          </li>
-                          <li>
-                            <a href="/product-details.html"
-                              >Planeringsverktyg</a
-                            >
-                          </li>
-                          <li>
-                            <a href="/product-details.html">Hela sortimentet</a>
-                          </li>
-                          <li>
-                            <a href="/product-details.html">Produktguider</a>
-                          </li>
-                          <li>
-                            <a href="/product-details.html">Broschyrer</a>
-                          </li>
-                          <li>
-                            <a href="/product-details.html">Presentkort</a>
-                          </li>
-                          <li>
-                            <a href="/product-details.html">Restaurangen</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div class="accordion__container">
-                      <button class="accordion">Kundservice</button>
-                      <div class="panel">
-                        <ul>
-                          <li>
-                            <a href="/product-details.html">Kundservice</a>
-                          </li>
-                          <li>
-                            <a href="/product-details.html">Vanliga frågor</a>
-                          </li>
-                          <li>
-                            <a href="/product-details.html">Servicetjänster</a>
-                          </li>
-                          <li>
-                            <a href="/product-details.html"
-                              >Retur & reklamation</a
-                            >
-                          </li>
-                          <li>
-                            <a href="/product-details.html">Reservdelar</a>
-                          </li>
-                          <li>
-                            <a href="/product-details.html"
-                              >Köp & leveransvillkor</a
-                            >
-                          </li>
-                          <li>
-                            <a href="/product-details.html">Ge IKEA feedback</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div class="accordion__container">
-                      <button class="accordion">Det här är IKEA</button>
-                      <div class="panel">
-                        <ul>
-                          <li>
-                            <a href="/product-details.html">Jobba på IKEA</a>
-                          </li>
-                          <li>
-                            <a href="/product-details.html"
-                              >En mer hållbar vardag</a
-                            >
-                          </li>
-                          <li>
-                            <a href="/product-details.html">IKEA Museum</a>
-                          </li>
-                          <li>
-                            <a href="/product-details.html">Livet hemma</a>
-                          </li>
-                          <li>
-                            <a href="/product-details.html"
-                              >Klimat och hållbarhet</a
-                            >
-                          </li>
-                          <li>
-                            <a href="/product-details.html">IKEA Foundation</a>
-                          </li>
-                          <li>
-                            <a href="/product-details.html">Socialt ansvar</a>
-                          </li>
-                          <li><a href="/product-details.html">Om oss</a></li>
-                          <li><a href="/product-details.html">Pressrum</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="footer-item footer-icons__container">
-                  <div class="footer-icons__bar">
-                    <div class="footer-icons__social-media">
-                      <ul>
-                        <li>
-                          <a href="/product-details.html" aria-label="facebook">
-                            <svg
-                              focusable="false"
-                              class="svg-icon hnf-svg-icon hnf-svg-icon--social"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                fill-rule="evenodd"
-                                clip-rule="evenodd"
-                                d="M21 12c0-4.9706-4.0294-9-9-9s-9 4.0294-9 9c0 4.4922 3.2912 8.2155 7.5938 8.8907v-6.2891H8.3086V12h2.2852v-1.9828c0-2.2556 1.3436-3.5016 3.3994-3.5016.9847 0 2.0146.1758 2.0146.1758v2.2149h-1.1349c-1.118 0-1.4667.6937-1.4667 1.4054V12h2.4961l-.399 2.6016h-2.0971v6.2891C17.7088 20.2155 21 16.4922 21 12z"
-                              ></path>
-                            </svg>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="/product-details.html"
-                            aria-label="instagram"
-                          >
-                            <svg
-                              focusable="false"
-                              class="svg-icon hnf-svg-icon hnf-svg-icon--social"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M12 7.3795c.8036 0 1.567.241 2.2902.6428.7232.4018 1.2857.9643 1.6875 1.6875.4018.7232.6428 1.4866.6428 2.2902 0 .8438-.241 1.6071-.6428 2.3304-.4018.7232-.9643 1.2857-1.6875 1.6875-.7232.4017-1.4866.6026-2.2902.6026-.8438 0-1.6071-.2009-2.3304-.6026-.7232-.4018-1.2857-.9643-1.6875-1.6875-.4017-.7233-.6026-1.4866-.6026-2.3304 0-.8036.2009-1.567.6026-2.2902.4018-.7232.9643-1.2857 1.6875-1.6875.7233-.4018 1.4866-.6428 2.3304-.6428zm0 7.6339c.8036 0 1.5268-.2813 2.1295-.8839.5625-.5625.8839-1.2857.8839-2.1295 0-.8036-.3214-1.5268-.8839-2.1295-.6027-.5625-1.3259-.8839-2.1295-.8839-.8438 0-1.567.3214-2.1295.884-.6026.6026-.8839 1.3258-.8839 2.1294 0 .8438.2813 1.567.884 2.1295.5624.6026 1.2856.8839 2.1294.8839zm5.9062-7.8348c0-.2813-.1205-.5224-.3214-.7634-.241-.201-.4821-.3214-.7634-.3214-.3214 0-.5625.1205-.7634.3214-.241.241-.3214.4821-.3214.7634 0 .3214.0804.5625.3214.7634.2009.241.442.3214.7634.3214.2813 0 .5224-.0804.7232-.3214.2009-.201.3215-.442.3616-.7634zm3.0536 1.0848c0 .7634.0402 2.0089.0402 3.7366 0 1.7679-.0402 3.0134-.0804 3.7768-.0401.7634-.1607 1.4062-.3214 1.9687-.2411.6831-.6428 1.2857-1.125 1.7679-.4821.4821-1.0848.8437-1.7277 1.0848-.5625.2009-1.2455.3214-2.0089.3616C14.9732 21 13.7277 21 12 21c-1.7679 0-3.0134 0-3.7768-.0402-.7634-.0402-1.4062-.1607-1.9687-.4018-.683-.2009-1.2858-.5625-1.7679-1.0446-.4821-.4822-.8437-1.0848-1.0848-1.7679-.201-.5625-.3214-1.2053-.3616-1.9687C3 15.0134 3 13.7679 3 12c0-1.7277 0-2.9732.0402-3.7366.0402-.7634.1607-1.4464.3616-2.009.241-.6428.6027-1.2455 1.0848-1.7276.4821-.4822 1.0848-.884 1.7679-1.125.5625-.1607 1.2053-.2813 1.9687-.3214C8.9866 3.0402 10.2321 3 12 3c1.7277 0 2.9732.0402 3.7366.0804.7634.0401 1.4464.1607 2.0089.3214.6429.241 1.2456.6428 1.7277 1.125.4822.4821.8839 1.0848 1.125 1.7277.1607.5625.2813 1.2455.3616 2.0089zm-1.9286 9.0402c.1608-.442.2411-1.1652.3215-2.1697 0-.5625.0402-1.4062.0402-2.491v-1.2858c0-1.0848-.0402-1.9285-.0402-2.491-.0804-1.0045-.1607-1.7277-.3215-2.1697-.3214-.8035-.9241-1.4062-1.7276-1.7276-.442-.1608-1.1652-.2411-2.1697-.3215-.6027 0-1.4464-.0402-2.491-.0402h-1.2858c-1.0848 0-1.9285.0402-2.491.0402-1.0045.0804-1.7277.1607-2.1697.3214-.8437.3215-1.4062.9242-1.7276 1.7277-.1608.442-.2813 1.1652-.3215 2.1697-.0402.6027-.0402 1.4464-.0402 2.491v1.2858c0 1.0848 0 1.9285.0402 2.491.0402 1.0045.1607 1.7277.3214 2.1697.3215.8437.9242 1.4062 1.7277 1.7276.442.1608 1.1652.2813 2.1697.3215.5625.0402 1.4062.0402 2.491.0402h1.2858c1.0848 0 1.9285 0 2.491-.0402 1.0045-.0402 1.7277-.1607 2.1697-.3215.8035-.3214 1.4062-.9241 1.7276-1.7276z"
-                              ></path>
-                            </svg>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="/product-details.html"
-                            aria-label="pinterest"
-                          >
-                            <svg
-                              focusable="false"
-                              class="svg-icon hnf-svg-icon hnf-svg-icon--social"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M12 3c-4.9704 0-9 4.0263-9 8.9926 0 3.8117 2.3704 7.0683 5.7185 8.3783-.0815-.7105-.1481-1.8059.0297-2.5831.163-.7031 1.0518-4.4704 1.0518-4.4704s-.2667-.5403-.2667-1.3322c0-1.2508.726-2.1834 1.6297-2.1834.7703 0 1.1407.5773 1.1407 1.2656 0 .7698-.4889 1.9244-.7481 2.9976-.2149.8955.4518 1.6283 1.3333 1.6283 1.6 0 2.8296-1.6875 2.8296-4.1152 0-2.1538-1.5481-3.6562-3.7629-3.6562-2.563 0-4.0667 1.917-4.0667 3.9005 0 .7697.2963 1.5987.6667 2.0501.074.0888.0814.1703.0592.2591-.0667.2812-.2222.8955-.2518 1.0214-.037.1628-.1334.1998-.3037.1184-1.126-.5255-1.8297-2.1612-1.8297-3.486 0-2.8347 2.0593-5.44 5.9482-5.44 3.1185 0 5.5481 2.2204 5.5481 5.1957 0 3.1012-1.9555 5.5954-4.6666 5.5954-.9112 0-1.7704-.4737-2.0593-1.0362l-.563 2.139c-.2.7845-.7481 1.7615-1.1185 2.361A9.0452 9.0452 0 0 0 11.9852 21c4.9704 0 9-4.0263 9-8.9926C21 7.0264 16.9704 3 12 3z"
-                              ></path>
-                            </svg>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="/product-details.html" aria-label="youtube">
-                            <svg
-                              focusable="false"
-                              class="svg-icon hnf-svg-icon hnf-svg-icon--social"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M21.5971 7.0313c.1465.6093.293 1.5572.3663 2.776L22 11.5l-.0366 1.6927c-.0733 1.2865-.2198 2.2005-.3663 2.8099-.1465.4063-.3663.7448-.6594 1.0156-.3296.3047-.6959.5078-1.1355.6094-.6593.1693-2.1245.2708-4.4689.3385L12 18l-3.3333-.0339c-2.3444-.0677-3.8462-.1692-4.4689-.3385-.4396-.1016-.8425-.3047-1.1355-.6094-.3297-.2708-.5495-.6093-.6594-1.0156-.1831-.6094-.293-1.5234-.3663-2.8099L2 11.5c0-.474 0-1.0495.0366-1.6927.0733-1.2188.1832-2.1667.3663-2.776.11-.4063.3297-.7448.6594-1.0495.293-.2709.696-.474 1.1355-.6094.6227-.1354 2.1245-.2708 4.4689-.3385L12 5l3.3333.0339c2.3444.0677 3.8096.203 4.4689.3385.4396.1354.8059.3385 1.1355.6094.2931.3047.5129.6432.6594 1.0495zM9.9487 14.276l5.2381-2.776-5.238-2.7422v5.5182z"
-                              ></path>
-                            </svg>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="/product-details.html" aria-label="twitter">
-                            <svg
-                              focusable="false"
-                              class="svg-icon hnf-svg-icon hnf-svg-icon--social"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M19.1367 8.5c.7031-.5048 1.336-1.1106 1.8633-1.851-.7031.303-1.4062.5049-2.1094.5721.7735-.4711 1.336-1.1105 1.6172-1.9519-.7383.4039-1.5117.7068-2.3555.8414-.3515-.3366-.7734-.6058-1.2304-.8077C16.4648 5.1009 15.9727 5 15.4453 5c-.668 0-1.2656.1683-1.8281.4711-.5625.3366-1.0195.774-1.336 1.3125-.3515.5385-.4921 1.1443-.4921 1.75 0 .2693 0 .5385.0703.8078-1.5117-.0674-2.918-.4039-4.254-1.077C6.2696 7.625 5.1798 6.75 4.2657 5.6394c-.3515.5721-.5273 1.178-.5273 1.7837 0 .6058.1406 1.1779.457 1.6827.2813.5384.7031.9423 1.1953 1.2788-.5976 0-1.1601-.1683-1.6523-.4711v.0673c0 .8413.2812 1.5817.8437 2.2211.5625.6731 1.2657 1.0769 2.1094 1.2452-.3516.0673-.668.101-.9844.101-.211 0-.457 0-.668-.0337.211.7068.6329 1.2789 1.2657 1.75.6328.4712 1.336.6731 2.1797.6731-1.3711 1.0096-2.918 1.5144-4.6055 1.5144-.3516 0-.6328 0-.8789-.0336C4.6875 18.4952 6.586 19 8.6602 19c2.1445 0 4.0429-.5048 5.7304-1.5817 1.5117-.9423 2.7071-2.1875 3.5508-3.8029.8086-1.4808 1.2305-3.0625 1.2305-4.6779 0-.202-.0352-.3365-.0352-.4375z"
-                              ></path>
-                            </svg>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="footer-icons__payment-methods">
-                      <ul>
-                        <li>
-                          <span class="jk-icon" aria-label="Visa"
-                            ><img
-                              src="/img/footer icons/visa.svg"
-                              alt="Visa"
-                              class="footer__accordion--image"
-                          /></span>
-                        </li>
-                        <li>
-                          <span class="jk-icon" aria-label="MasterCard"
-                            ><img
-                              src="/img/footer icons/master-card.svg"
-                              alt="MasterCard"
-                              class="footer__accordion--image"
-                          /></span>
-                        </li>
-                        <li>
-                          <span class="jk-icon" aria-label="American Express"
-                            ><img
-                              src="/img/footer icons/american-express.svg"
-                              alt="American Express"
-                              class="footer__accordion--image"
-                          /></span>
-                        </li>
-                        <li>
-                          <span class="jk-icon" aria-label="Diners Club"
-                            ><img
-                              src="/img/footer icons/diners-club.svg"
-                              alt="Diners Club"
-                              class="footer__accordion--image"
-                          /></span>
-                        </li>
-                        <li>
-                          <span class="jk-icon" aria-label="IKANO Bank"
-                            ><img
-                              src="/img/footer icons/ikano.svg"
-                              alt="IKANO Bank"
-                              class="footer__accordion--image"
-                          /></span>
-                        </li>
-                        <li>
-                          <span class="jk-icon" aria-label="Klarna"
-                            ><img
-                              src="/img/footer icons/klarna.svg"
-                              alt="Klarna"
-                              class="footer__accordion--image"
-                          /></span>
-                        </li>
-                        <li>
-                          <span class="jk-icon" aria-label="Swish"
-                            ><img
-                              src="/img/footer icons/swish.svg"
-                              alt="Swish"
-                              class="footer__accordion--image"
-                          /></span>
-                        </li>
-                        <li>
-                          <span class="jk-icon" aria-label="BankID"
-                            ><img
-                              src="/img/footer icons/bankid.svg"
-                              alt="BankID"
-                              class="footer__accordion--image"
-                          /></span>
-                        </li>
-                        <li>
-                          <span class="jk-icon" aria-label="Apple Pay"
-                            ><img
-                              src="/img/footer icons/apple-pay.svg"
-                              alt="Apple Pay"
-                              class="footer__accordion--image"
-                          /></span>
-                        </li>
-                        <li>
-                          <span class="jk-icon" aria-label="Visa"
-                            ><img
-                              src="/img/footer icons/visa-secure.svg"
-                              alt="Visa"
-                              class="footer__accordion--image"
-                          /></span>
-                        </li>
-                        <li>
-                          <span class="jk-icon" aria-label="MasterCard"
-                            ><img
-                              src="/img/footer icons/master-card-id-check.svg"
-                              alt="MasterCard"
-                              class="footer__accordion--image"
-                          /></span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="footer-icons__language-selector">
-                    <button class="jk-btn jk-footer-btn">
-                      <svg
-                        focusable="false"
-                        class="svg-icon hnf-svg-icon hnf-btn-change-country__globe"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M13.7467 18.1766C12.9482 19.7737 12.2151 20 12 20c-.2151 0-.9482-.2263-1.7467-1.8234-.3065-.6131-.5745-1.3473-.7831-2.1766h5.0596c-.2086.8293-.4766 1.5635-.7831 2.1766zM14.8885 14h-5.777A17.7354 17.7354 0 0 1 9 12c0-.6949.0392-1.3641.1115-2h5.777c.0723.6359.1115 1.3051.1115 2 0 .6949-.0392 1.3641-.1115 2zm1.6955 2c-.2658 1.2166-.6492 2.307-1.1213 3.2138A8.0347 8.0347 0 0 0 18.9297 16H16.584zm3.164-2H16.9c.0656-.6462.1-1.3151.1-2 0-.6849-.0344-1.3538-.1-2h2.848A8.0156 8.0156 0 0 1 20 12a8.0156 8.0156 0 0 1-.252 2zm-.8183-6a8.035 8.035 0 0 0-3.467-3.2138c.4721.9068.8555 1.9972 1.1213 3.2138h2.3457zm-4.3999 0c-.2086-.8293-.4766-1.5635-.7831-2.1766C12.9482 4.2264 12.2151 4 12 4c-.2151 0-.9482.2263-1.7467 1.8234-.3065.613-.5745 1.3473-.7831 2.1766h5.0596zM7.416 8c.2658-1.2166.6491-2.307 1.1213-3.2138A8.035 8.035 0 0 0 5.0703 8H7.416zm-3.164 2A8.0147 8.0147 0 0 0 4 12c0 .6906.0875 1.3608.252 2H7.1a19.829 19.829 0 0 1-.1-2c0-.6849.0344-1.3538.1-2H4.252zm3.164 6H5.0704a8.0347 8.0347 0 0 0 3.467 3.2138C8.0651 18.307 7.6818 17.2166 7.4161 16zM22 12c0-5.5229-4.4772-10-10-10C6.4771 2 2 6.4771 2 12c0 5.5228 4.4771 10 10 10 5.5228 0 10-4.4772 10-10z"
-                        ></path>
-                      </svg>
-                      <span class="btn-label">Ändra land</span>
-                    </button>
-                  </div>
-                </div>
                 <div class="footer-item footer-legal__container">
                   <div class="footer-legal__copyright">
                     <small>© Inter IKEA Systems B.V. 1999-2022 </small>
