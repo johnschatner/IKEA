@@ -331,6 +331,9 @@ h1 {
 .legal-notice {
   margin-bottom: calc(var(--gap) * 0.65);
 }
+form > h3 {
+  margin-bottom: calc(var(--gap) * 0.5);
+}
 form label {
   display: block;
   margin-bottom: 0.1875rem;
