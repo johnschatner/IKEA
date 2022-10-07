@@ -23,6 +23,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/header.js" defer></script>
     <script src="js/accordion.js" defer></script>
+    <script src="js/forms.js" defer></script>
   </head>
   <body>
     <header class="jk-header">
@@ -102,26 +103,71 @@
                   </div>
                   <div class="checkout-step__content">
                     <h1 class="jk-dark">Adress</h1>
-                    <form action="#">
-                      <input type="checkbox" name="isCompany" id="isCompany" />
-                      <label for="isCompany">Jag är företagskund</label>
+                    <form id="address" action="/" method="GET">
+                      <div class="company-client">
+                        <input
+                          type="checkbox"
+                          name="isCompany"
+                          id="isCompany"
+                        />
+                        <label for="isCompany">Jag är företagskund</label>
+                      </div>
                       <h3 class="jk-dark">Fakturaadress</h3>
                       <div class="jk-form-row only-desktop">
-                        <div class="jk-col-6">
+                        <div class="jk-col-6 required">
                           <label for="fname">Förnamn</label>
-                          <input id="fname" type="text" />
+                          <input
+                            id="fname"
+                            type="text"
+                            placeholder=" "
+                            required
+                          />
                         </div>
-                        <div class="jk-col-6">
+                        <div class="jk-col-6 required">
                           <label for="lname">Efternamn</label>
-                          <input id="lname" type="text" />
+                          <input
+                            id="lname"
+                            type="text"
+                            placeholder=" "
+                            required
+                          />
                         </div>
                       </div>
-                      <label for="email">E-postadress</label>
-                      <input type="email" name="email" id="email" />
-                      <div class="jk-form-row">
+                      <div class="email-field required">
+                        <label for="email">E-postadress</label>
+                        <input
+                          type="email"
+                          name="email"
+                          id="email"
+                          placeholder=" "
+                          required
+                        />
+                        <div class="error-message">
+                          <span class="jk-error-icon">
+                            <svg
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                              class="jk-svg-icon-sm"
+                              aria-hidden="true"
+                            >
+                              <path
+                                d="M12.9482 13.1025h-2.0035v-6h2l.0035 6zm-2.25 2.75c0-.6903.5597-1.25 1.25-1.25.6904 0 1.25.5597 1.25 1.25 0 .6904-.5596 1.25-1.25 1.25-.6903 0-1.25-.5596-1.25-1.25z"
+                              ></path>
+                            </svg>
+                          </span>
+                          <span class="error-message--label"
+                            >Felaktig e-postadress</span
+                          >
+                        </div>
+                      </div>
+                      <div class="jk-form-row required">
                         <label for="phone__number">Mobiltelefonnummer</label>
                         <div class="jk-col-4">
-                          <select name="country-code" id="country-code">
+                          <select
+                            name="country-code"
+                            id="country-code"
+                            required
+                          >
                             <option value="SE">SE (+46)</option>
                             <option value="FI">FI (+358)</option>
                             <option value="NO">NO (+47)</option>
@@ -135,27 +181,68 @@
                             type="number"
                             name="phone__number"
                             id="phone__number"
+                            placeholder=" "
+                            required
                           />
                         </div>
+                        <div class="jk-col-2">
+                          <button
+                            type="button"
+                            class="phone-number__help-btn jk-svg-btn"
+                          >
+                            <span class="jk-svg-btn__inner">
+                              <svg
+                                focusable="false"
+                                viewBox="0 0 24 24"
+                                class="jk-svg-icon-sm"
+                                aria-hidden="true"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
+                                  d="M13.25 7.25c0 .6904-.5596 1.25-1.25 1.25s-1.25-.5596-1.25-1.25S11.3096 6 12 6s1.25.5596 1.25 1.25zM11 18v-8h2v8h-2z"
+                                ></path>
+                              </svg>
+                            </span>
+                          </button>
+                        </div>
                       </div>
-                      <label for="country">Land</label>
-                      <select name="country" id="country">
-                        <option value="Sweden">Sverige</option>
-                        <option value="England">England</option>
-                        <option value="Denmark">Danmark</option>
-                        <option value="United States of America">USA</option>
-                        <option value="Norway">Norge</option>
-                        <option value="Finland">Finland</option>
-                        <option value="Switzerland">Schweiz</option>
-                      </select>
-                      <label for="street">Gatuadress</label>
-                      <input id="street" type="text" />
+                      <div class="country-field">
+                        <label for="country">Land</label>
+                        <select name="country" id="country">
+                          <option value="Sweden">Sverige</option>
+                          <option value="England">England</option>
+                          <option value="Denmark">Danmark</option>
+                          <option value="United States of America">USA</option>
+                          <option value="Norway">Norge</option>
+                          <option value="Finland">Finland</option>
+                          <option value="Switzerland">Schweiz</option>
+                        </select>
+                      </div>
+                      <div class="street-field required">
+                        <label for="street">Gatuadress</label>
+                        <input
+                          id="street"
+                          type="text"
+                          placeholder=" "
+                          required
+                        />
+                      </div>
                       <label for="co-box">C/O (valfritt)</label>
                       <input id="co-box" type="text" />
-                      <label for="postal-code">Postnummer</label>
-                      <input id="postal-code" type="number" />
-                      <label for="town">Ort</label>
-                      <input id="town" type="text" />
+                      <div class="postal-field required">
+                        <label for="postal-code">Postnummer</label>
+                        <input
+                          id="postal-code"
+                          type="number"
+                          placeholder=" "
+                          required
+                        />
+                      </div>
+                      <div class="town-field required">
+                        <label for="town">Ort</label>
+                        <input id="town" type="text" placeholder=" " required />
+                      </div>
                       <div class="ikea-family-card">
                         <h3 class="jk-dark">IKEA Family</h3>
                         <a class="jk-dark" href="#/"
@@ -171,7 +258,7 @@
                           ></span
                         >
                       </div>
-                      <button type="submit">
+                      <button class="jk-form-submit jk-btn" type="submit">
                         <span>Fortsätt</span>
                       </button>
                     </form>

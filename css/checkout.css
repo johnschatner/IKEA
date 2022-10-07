@@ -18,6 +18,19 @@
   --color-neutral-black-200: #121212;
   --color-neutral-black-300: #000;
 
+  /*Accent colors*/
+  --color-accent-red: #ab6f59;
+  --color-accent-green: #898c85;
+  --color-accent-beige: #d5c5b6;
+  --color-accent-brown: #9c7c60;
+  --color-accent-grey-100: #dad5d2;
+  --color-accent-grey-200: #dddddd;
+  --color-accent-blue-100: #0077c1;
+  --color-accent-blue-150: #0058a3;
+  --color-accent-blue-160: #004f93;
+  --color-accent-blue-170: #003e72;
+  --color-accent-blue-200: #002952;
+
   /*Typography*/
   --font-weight-normal: 500;
   --font-weight-bold: 700;
@@ -110,10 +123,6 @@ h1 {
 }
 .checkout-step__content span {
   display: block;
-}
-.checkout-step__content
-  div:not(:last-child):not(.jk-form-row):not(.jk-form-row div) {
-  margin-bottom: calc(var(--gap) * 0.6);
 }
 .delivery-time {
   padding-right: var(--gap);
@@ -309,14 +318,38 @@ h1 {
 }
 
 /*Form*/
+.checkout-step__content h1 {
+  margin-bottom: calc(var(--gap) * 0.8);
+}
+.ikea-family-card :last-child {
+  display: block;
+  margin-bottom: calc(var(--gap) * 1.2);
+}
+.town-field :last-child {
+  margin-bottom: calc(var(--gap) * 1.1);
+}
+.legal-notice {
+  margin-bottom: calc(var(--gap) * 0.65);
+}
+form label {
+  display: block;
+  margin-bottom: 0.1875rem;
+}
 input[type="checkbox"] + label {
   cursor: pointer;
+  display: inline-block;
+}
+form .company-client {
+  display: flex;
+  gap: calc(var(--gap) * 0.75);
+  margin-bottom: var(--gap);
 }
 form input[type="text"],
 form input[type="email"],
 form input[type="number"],
 form select {
   min-width: 100%;
+  margin: 0 0 1rem;
 }
 @media (min-width: 600px) {
   .only-desktop.jk-form-row {
@@ -331,6 +364,17 @@ form select {
   display: flex;
   flex-wrap: wrap;
 }
+.jk-form-row:not(.only-desktop) > div:first-of-type {
+  margin-right: calc(var(--gap) * 0.35);
+}
+.jk-form-row:not(.only-desktop) > div:nth-child(3) {
+  margin-right: calc(var(--gap) * 0.6);
+}
+
+.jk-col-2 {
+  display: flex;
+  align-items: center;
+}
 .jk-col-4 {
   flex: 1;
   max-width: 140px;
@@ -340,4 +384,121 @@ form select {
 }
 .jk-form-row label {
   min-width: 100%;
+}
+
+/*
+    Inputs
+*/
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form select {
+  height: 48px;
+  padding: 11px 7px;
+  border-radius: 4px;
+  border: none;
+  outline: 1px solid var(--color-default);
+
+  transition-delay: 100ms;
+  transition: outline 100ms ease-in-out;
+  font-size: var(--fs-normal-600);
+
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+}
+form div.required {
+  position: relative;
+}
+form div.required label::after {
+  content: "*";
+  position: absolute;
+  top: -1px;
+  margin-left: 3px;
+  font-size: var(--fs-normal-600);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.phone-number__help-btn {
+  padding: 4px;
+  border-radius: 99px;
+  background-color: var(--colour-neutral-grey-100);
+}
+.jk-form-submit {
+  background: var(--color-accent-blue-150);
+  color: var(--color-neutral-white-100);
+  border: none;
+  padding: 17px 10px;
+  border-radius: 99px;
+  min-width: 100%;
+  font-size: var(--fs-normal-500);
+}
+.jk-form-submit:hover {
+  background: var(--color-accent-blue-160);
+}
+.jk-form-submit:active {
+  background: var(--color-accent-blue-170);
+  scale: 0.97;
+}
+
+/*Form validation*/
+:root {
+  --color-invalid: #e00751;
+  --color-valid: #0058a3;
+  --color-default: #929292;
+}
+
+.error-message {
+  display: none;
+}
+.jk-error-icon {
+  position: relative;
+  border-radius: 99px;
+  height: 18px;
+  width: 18px;
+  background-color: var(--color-invalid);
+  margin-right: 4px;
+}
+.error-message svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: var(--color-neutral-white-100);
+}
+.error-message--label {
+  color: var(--color-invalid);
+  font-size: 0.8rem;
+}
+
+/* Only show invalid ring while not focused */
+input:not(:focus):not(:placeholder-shown):invalid {
+  outline-color: var(--color-invalid);
+}
+input:focus:not(:placeholder-shown):invalid {
+  outline-color: var(--color-invalid);
+  outline-width: 2px;
+  outline-offset: -1px;
+}
+input:not(:focus):not(:placeholder-shown):invalid ~ .error-message {
+  margin: -0.75rem 0 0.875rem 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Only show valid ring while focused and if a value is entered */
+input:focus:not(:placeholder-shown) {
+  outline-color: var(--color-valid);
+  outline-width: 2px;
+  outline-offset: -1px;
 }
