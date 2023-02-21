@@ -88,7 +88,7 @@ In this project I strive to recreate the IKEA homepage, one product page and the
 - Many effects
 - Built with HTML5, CSS3 and Vanilla JS
 
-* note: The recreation does not include any business logic nor do I or the project claim to own any of the images/assets used. All trademarks, rights and other assets belong to their rightful owners. This was only made in good fun and to see if I could recreate their amazing online experience!
+<sub>note: The recreation does not include any business logic nor do I or the project claim to own any of the images/assets used. All trademarks, rights and other assets belong to their rightful owners. This was only made in good fun and to see if I could recreate their amazing online experience!</sub>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
