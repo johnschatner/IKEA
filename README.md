@@ -29,19 +29,19 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/johnschatner/react-minesweeper">
+  <a href="https://github.com/johnschatner/IKEA">
     <img src="public/logo.png" alt="Logo" width="240" height="150">
   </a>
 
   <p align="center">
-    A very simple rendition of the classic MS Minesweeper game built with ReactJS
+    A wholly extensive recreation of the IKEA website as of 2022
     <br />
-    <a target="_blank" href="https://johns-minesweeper.netlify.app/"><strong>View Demo »</strong></a>
+    <a target="_blank" href="https://johnsikea.netlify.app/"><strong>View Demo »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/johnschatner/react-minesweeper/issues">Report Bug</a>
+    <a href="https://github.com/johnschatner/IKEA/issues">Report Bug</a>
     ·
-    <a href="https://github.com/johnschatner/react-minesweeper/issues">Request Feature</a>
+    <a href="https://github.com/johnschatner/IKEA/issues">Request Feature</a>
   </p>
 </div>
 
@@ -75,7 +75,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://johns-minesweeper.netlify.app/)
+[![Product Name Screen Shot][product-screenshot]](https://johnsikea.netlify.app/)
 
 A very simple rendition of the classic MS Minesweeper game built with ReactJS.
 <br>
@@ -96,7 +96,7 @@ A very simple rendition of the classic MS Minesweeper game built with ReactJS.
 
 ## Getting Started
 
-<a target="_blank" href="https://johns-minesweeper.netlify.app/"><strong>View Demo »</strong></a>
+<a target="_blank" href="https://johnsikea.netlify.app/"><strong>View Demo »</strong></a>
 
 To get a local copy up and running follow these simple steps.
 
@@ -113,7 +113,7 @@ This project uses npm, please install the latest version:
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/johnschatner/react-minesweeper.git
+   git clone https://github.com/johnschatner/IKEA.git
    ```
 2. Install NPM packages
    ```sh
@@ -130,7 +130,7 @@ This project uses npm, please install the latest version:
 
 ## Usage
 
-<a target="_blank" href="https://johns-minesweeper.netlify.app/"><strong>View Demo »</strong></a>
+<a target="_blank" href="https://johnsikea.netlify.app/"><strong>View Demo »</strong></a>
 
 The game will work without any further configuration required on your end.
 
@@ -147,7 +147,7 @@ You can however change the difficulity of the game by changing the state variabl
 - [ ] Deeper state handling
   - [ ] Restartable core
 
-See the [open issues](https://github.com/johnschatner/react-minesweeper/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/johnschatner/IKEA/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -182,7 +182,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Isac - isacrs.dev@gmail.com
 
-Project Link: [https://github.com/johnschatner/react-minesweeper](https://github.com/johnschatner/react-minesweeper)
+Project Link: [https://github.com/johnschatner/IKEA](https://github.com/johnschatner/IKEA)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -202,16 +202,16 @@ Project Link: [https://github.com/johnschatner/react-minesweeper](https://github
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/johnschatner/react-minesweeper.svg?style=for-the-badge
-[contributors-url]: https://github.com/johnschatner/react-minesweeper/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/johnschatner/react-minesweeper.svg?style=for-the-badge
-[forks-url]: https://github.com/johnschatner/react-minesweeper/network/members
-[stars-shield]: https://img.shields.io/github/stars/johnschatner/react-minesweeper.svg?style=for-the-badge
-[stars-url]: https://github.com/johnschatner/react-minesweeper/stargazers
-[issues-shield]: https://img.shields.io/github/issues/johnschatner/react-minesweeper.svg?style=for-the-badge
-[issues-url]: https://github.com/johnschatner/react-minesweeper/issues
-[license-shield]: https://img.shields.io/github/license/johnschatner/react-minesweeper.svg?style=for-the-badge
-[license-url]: https://github.com/johnschatner/react-minesweeper/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/johnschatner/IKEA.svg?style=for-the-badge
+[contributors-url]: https://github.com/johnschatner/IKEA/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/johnschatner/IKEA.svg?style=for-the-badge
+[forks-url]: https://github.com/johnschatner/IKEA/network/members
+[stars-shield]: https://img.shields.io/github/stars/johnschatner/IKEA.svg?style=for-the-badge
+[stars-url]: https://github.com/johnschatner/IKEA/stargazers
+[issues-shield]: https://img.shields.io/github/issues/johnschatner/IKEA.svg?style=for-the-badge
+[issues-url]: https://github.com/johnschatner/IKEA/issues
+[license-shield]: https://img.shields.io/github/license/johnschatner/IKEA.svg?style=for-the-badge
+[license-url]: https://github.com/johnschatner/IKEA/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/isac-rasmusson-99344924b
 [product-screenshot]: public/project-screen-1.png
