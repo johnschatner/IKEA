@@ -30,7 +30,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/johnschatner/react-minesweeper">
-    <img src="public/logo.png" alt="Logo" width="99" height="62">
+    <img src="public/logo.png" alt="Logo" width="240" height="150">
   </a>
 
   <p align="center">
