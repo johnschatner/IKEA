@@ -77,20 +77,28 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://johnsikea.netlify.app/)
 
-A very simple rendition of the classic MS Minesweeper game built with ReactJS.
+In this project I strive to recreate the IKEA homepage, one product page and the checkout page as closely as possible.
 <br>
 
 - Fun!
-- Responsive
-- Built with ReactJS
+- 1x Landing page
+- 1x Product page
+- 1x Checkout page
+- Fully responsive
+- Many effects
+- Built with HTML5, CSS3 and Vanilla JS
+
+* note: The recreation does not include any business logic nor do I or the project claim to own any of the images/assets used. All trademarks, rights and other assets belong to their rightful owners. This was only made in good fun and to see if I could recreate their amazing online experience!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!--
 ### Built With
 
 - [![React][react.js]][react-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+-->
 
 <!-- GETTING STARTED -->
 
@@ -132,9 +140,7 @@ This project uses npm, please install the latest version:
 
 <a target="_blank" href="https://johnsikea.netlify.app/"><strong>View Demo »</strong></a>
 
-The game will work without any further configuration required on your end.
-
-You can however change the difficulity of the game by changing the state variables (`boardSize & mines L:16-17`) inside `src/Components/Board/Board.jsx`
+Explore the recreation as you see fit! It's live for the foreseeable future. :)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -142,10 +148,7 @@ You can however change the difficulity of the game by changing the state variabl
 
 ## Roadmap
 
-- [ ] Recursion to reveal nearby empty cells
-- [ ] Able to flag cells
-- [ ] Deeper state handling
-  - [ ] Restartable core
+- [ ] Investigate IKEA business philosophy and how they implement it digitally
 
 See the [open issues](https://github.com/johnschatner/IKEA/issues) for a full list of proposed features (and known issues).
 
