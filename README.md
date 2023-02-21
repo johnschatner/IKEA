@@ -110,12 +110,12 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-This project uses npm, please install the latest version:
+This project uses Visual Studio Code - Live Server Extension
 
-- npm
+<!-- - npm
   ```sh
   npm install npm@latest -g
-  ```
+  ``` -->
 
 ### Installation
 
@@ -123,14 +123,11 @@ This project uses npm, please install the latest version:
    ```sh
    git clone https://github.com/johnschatner/IKEA.git
    ```
-2. Install NPM packages
-   ```sh
-   npm install
-   ```
-3. Start a local development server
-   ```sh
-   npm run dev
-   ```
+   <!-- 2. Install NPM packages
+      ```sh
+      npm install
+      ``` -->
+2. Start a local development server
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
